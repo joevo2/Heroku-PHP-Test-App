@@ -7,4 +7,7 @@
 		echo "Database connection error";
 		exit;
 	}
+
+	#Query, similar to MySQL
+	#$result = pg_query($db,"SELECT ...")
 ?>	
