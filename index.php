@@ -1,3 +1,15 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Heroku PHP Test Page</title>
+		<style type="text/css">
+		</style>
+	</head>
+	<body>
+		<h1>Testing HTML!</h1>
+	</body>
+<html>
+
 <?php
 	echo "Hello World";
 	
