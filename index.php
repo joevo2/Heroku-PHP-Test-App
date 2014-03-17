@@ -7,6 +7,7 @@
 	</head>
 	<body>
 		<h1>Testing HTML!</h1>
+		<img src="http://placehold.it/320x320">
 	</body>
 <html>
 
