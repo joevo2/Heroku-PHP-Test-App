@@ -43,6 +43,6 @@
 		address VARCHAR(80) NOT NULL )");
 	
 	
-	$result = pg_query($con, "select * from information_schema.tables");
+	$result = pg_query($con, "SELECT table_name FROM information_schema.tables WHERE table_schema='public'");
 	queryDisplay($result);
 ?>	
