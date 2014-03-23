@@ -59,7 +59,7 @@
 		}
 	}
 
-	queryDisplay($con, $result);
+	queryDisplay($result);
 	
 
 
