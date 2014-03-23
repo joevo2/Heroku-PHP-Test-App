@@ -44,7 +44,8 @@
 		'lng' FLOAT(10, 6) NOT NULL
 		) ENGINE = POSTGRES
 		") or die(pg_last_error();
-		$result = pg_query($con, "SHOW COLUMNS FROM marker");
+	
+	//$result = pg_query($con, "SHOW COLUMNS FROM marker");
 
 	/*
 	function queryDisplay($result) {
