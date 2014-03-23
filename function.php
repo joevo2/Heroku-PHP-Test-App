@@ -17,6 +17,6 @@
 		else {
 			$query = "INSERT INTO $table ($col) VALUES ('$item')";
 		}
-		$result = mysqli_query($con, $query) or die(mysqli_error($con));
+		$result = pg_query($con, $query) or die(pg_last_error($con));
 	}
 ?>
