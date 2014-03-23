@@ -47,7 +47,7 @@
 
 	$result = pg_query($con, "SHOW COLUMNS FROM marker")
 
-
+	/*
 	function queryDisplay($result) {
 		$rowCount = pg_num_rows($result);
 		for ($x=0; $x < $rowCount; $x++) { 
@@ -60,7 +60,6 @@
 	}
 
 	queryDisplay($con, $result);
+	*/
 
-	#Query, similar to MySQL
-	#$result = pg_query($db,"SELECT ...")
 ?>	
