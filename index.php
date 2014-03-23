@@ -40,7 +40,7 @@
 	$sql = "CREATE TABLE user (
 		id int AUTO_INCREMENT PRIMARY KEY,
 		name VARCHAR(60) NOT NULL,
-		address VARCHAR(80) NOT NULL)"
+		address VARCHAR(80) NOT NULL)";
 	$query = pg_query($sql);
 
 	if ($query)
