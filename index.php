@@ -37,7 +37,7 @@
 		port=5432 user=ilqmgopvoboqqe password=pSt_F9c9Yc4yuJMrYdigezqXAr 
 		sslmode=require") or die('Could not connect: ' . pg_last_error());
 	#Create Table
-	$sql = "DROP TABLE user)";
+	$sql = "DROP TABLE user";
 	$query = pg_query($sql);
 
 	if ($query)
