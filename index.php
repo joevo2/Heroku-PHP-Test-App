@@ -37,7 +37,7 @@
 		port=5432 user=ilqmgopvoboqqe password=pSt_F9c9Yc4yuJMrYdigezqXAr 
 		sslmode=require") or die('Could not connect: ' . pg_last_error());
 	
-	pg_query($con,"CREATE TABLE user (
+	pg_execute($con, "CREATE TABLE user (
 		id INT NOT NULL AUTO_INCREMENT PRIMARY KEY,
 		name VARCHAR(60) NOT NULL,
 		address VARCHAR(80) NOT NULL )");
