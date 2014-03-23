@@ -20,8 +20,10 @@
 		    &q=HELP+College+of+Arts+and+Technology">
 		</iframe>
 
-		<form>
-			<input type="text" placeholder="Testing">
+		<form action="" method="post">
+			<input type="text" name="name" placeholder="Your Name">
+			<br>
+			<input type="text" name="address" placeholder="Your Address">
 			<input type="submit">
 		</form>
 
