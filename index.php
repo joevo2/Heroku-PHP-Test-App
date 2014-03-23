@@ -45,7 +45,7 @@
 		");
 	
 	
-	$result = pg_query($con, "SHOW COLUMNS FROM 'marker'");
+	$result = pg_query($con, "SELECT * FROM pg_catalog.pg_tables");
 
 	
 	function queryDisplay($result) {
