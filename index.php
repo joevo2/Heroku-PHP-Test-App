@@ -7,6 +7,7 @@
 	</head>
 	<body>
 		<h1>HELP CAT Car Pool Database</h1>
+		<!-- Google Map Embed -->
 		<iframe
 		  width="600"
 		  height="450"
@@ -14,12 +15,16 @@
 		  src="https://www.google.com/maps/embed/v1/place?key=AIzaSyDsA-rWJVhqWo5XhCH3f6eOwjQol2hyCCc
 		    &q=HELP+College+of+Arts+and+Technology">
 		</iframe>
+
+		<form>
+			<input type="text">
+			<input type="submit">
+		</form>
+
 	</body>
 <html>
 
 <?php
-	echo "Hello World";
-	
 	#PostgreSQL Databse Connection
 	$db = pg_connect("dbname=dectdccb9d6neh host=ec2-107-20-191-205.compute-1.amazonaws.com 
 		port=5432 user=ilqmgopvoboqqe password=pSt_F9c9Yc4yuJMrYdigezqXAr 
