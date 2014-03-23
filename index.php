@@ -37,6 +37,7 @@
 		port=5432 user=ilqmgopvoboqqe password=pSt_F9c9Yc4yuJMrYdigezqXAr 
 		sslmode=require") or die('Could not connect: ' . pg_last_error());
 	#Create Table
+	/*
 	$sql = "CREATE TABLE test (id serial,name varchar(60) NOT NULL,address varchar(80) NOT NULL)";
 	$query = pg_query($sql);
 
@@ -45,6 +46,7 @@
 	else { 
   		echo "An error Occured! ".pg_last_error()."<br>";
 	}
+	*/
 
 	queryDisplay(queryInsert($con, "test", array('name', 'address'),array("Joel Yek", "BAM Villa, Taman Maluri")));
 ?>	
