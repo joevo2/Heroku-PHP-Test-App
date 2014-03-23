@@ -4,10 +4,8 @@
 		<title>HELP CAT Carpool</title>
 		<style type="text/css">
 			iframe {
-				float: left;
 				max-width: 600px;
 				width: 100%;
-				margin: 10px;
 			}
 		</style>
 	</head>
@@ -47,7 +45,7 @@
 		");
 	*/
 	
-	$result = pg_query($con, "SHOW COLUMNS FROM marker");
+	$result = pg_query($con, "SHOW COLUMNS FROM 'marker'");
 
 	
 	function queryDisplay($result) {
