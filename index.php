@@ -45,7 +45,7 @@
 		");
 	
 	
-	$result = pg_query($con, "SHOW COLUMNS FROM marker");
+	$result = pg_query($con, "SHOW COLUMNS FROM 'marker'");
 
 	
 	function queryDisplay($result) {
