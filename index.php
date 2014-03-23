@@ -37,7 +37,7 @@
 		port=5432 user=ilqmgopvoboqqe password=pSt_F9c9Yc4yuJMrYdigezqXAr 
 		sslmode=require") or die('Could not connect: ' . pg_last_error());
 	#Create Table
-	$sql = "CREATE TABLE user (id int AUTO_INCREMENT PRIMARY KEY,name VARCHAR(60) NOT NULL,address VARCHAR(80) NOT NULL)";
+	$sql = "CREATE TABLE user1(id int AUTO_INCREMENT PRIMARY KEY,name VARCHAR(60) NOT NULL,address VARCHAR(80) NOT NULL)";
 	$query = pg_query($sql);
 
 	if ($query)
@@ -46,5 +46,5 @@
   		echo "An error Occured! ".pg_last_error()."<br>";
 	}
 
-	queryDisplay(queryInsert($con, "user", array('name', 'address'),array("Joel Yek", "BAM Villa, Taman Maluri")));
+	//queryDisplay(queryInsert($con, "user", array('name', 'address'),array("Joel Yek", "BAM Villa, Taman Maluri")));
 ?>	
