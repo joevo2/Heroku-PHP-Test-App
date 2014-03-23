@@ -1,13 +1,19 @@
 <!DOCTYPE html>
 <html>
 	<head>
-		<title>Heroku PHP Test Page</title>
+		<title>HELP CAT Carpool</title>
 		<style type="text/css">
 		</style>
 	</head>
 	<body>
-		<h1>Testing HTML!</h1>
-		<img src="http://placehold.it/320x320">
+		<h1>HELP CAT Car Pool Database</h1>
+		<iframe
+		  width="600"
+		  height="450"
+		  frameborder="0" style="border:0"
+		  src="https://www.google.com/maps/embed/v1/place?key=AIzaSyDsA-rWJVhqWo5XhCH3f6eOwjQol2hyCCc
+		    &q=HELP+College+of+Arts+and+Technology">
+		</iframe>
 	</body>
 <html>
 
