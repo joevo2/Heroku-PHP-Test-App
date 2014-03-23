@@ -5,8 +5,9 @@
 		<style type="text/css">
 			iframe {
 				float: left;
-				max-width: 400px;
+				max-width: 600px;
 				width: 100%;
+				margin: 10px;
 			}
 		</style>
 	</head>
