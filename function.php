@@ -17,6 +17,13 @@
 		else {
 			$query = "INSERT INTO $table ($col) VALUES ('$item')";
 		}
-		$result = pg_query($con, $query) or die(pg_last_error($con));
+		$result = pg_query($con, $query) or die(pg_last_error($con));	
+	}
+
+	function queryAll($con, $table) {
+		$query = "SELECT * FROM $table";
+		$result = pg_query($con,$query) or die(pg_last_error($con));
+		
+		return $result;
 	}
 ?>
