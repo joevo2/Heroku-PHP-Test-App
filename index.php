@@ -29,6 +29,9 @@
 <html>
 
 <?php
+	#PHP Function
+	include 'function.php';
+
 	#PostgreSQL Databse Connection
 	$con = pg_connect("dbname=dectdccb9d6neh host=ec2-107-20-191-205.compute-1.amazonaws.com 
 		port=5432 user=ilqmgopvoboqqe password=pSt_F9c9Yc4yuJMrYdigezqXAr 
@@ -36,25 +39,12 @@
 	
 	
 	pg_query($con,"CREATE TABLE user (
-		'id' INT NOT NULL AUTO_INCREMENT PRIMARY KEY,
-		'name' VARCHAR(60) NOT NULL,
-		'address' VARCHAR(80) NOT NULL)");
+		id INT NOT NULL AUTO_INCREMENT PRIMARY KEY,
+		name VARCHAR(60) NOT NULL,
+		address VARCHAR(80) NOT NULL )");
 	
 	
 	$result = pg_query($con, "SHOW COLUMNS FROM user");
-
-	
-	function queryDisplay($result) {
-		$rowCount = pg_num_rows($result);
-		for ($x=0; $x < $rowCount; $x++) { 
-			$row = pg_fetch_array($result,PGSQL_NUM);
-			for ($i=0; $i < count($row); $i++) {
-					echo $row[$i] . " ";
-			}
-			echo "<br>";
-		}
-	}
-
 	queryDisplay($result);
 	
 
