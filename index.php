@@ -24,6 +24,7 @@
 			<input type="text" name="name" placeholder="Your Name">
 			<br>
 			<input type="text" name="address" placeholder="Your Address">
+			<br>
 			<input type="submit">
 		</form>
 
@@ -50,5 +51,5 @@
 	}
 	*/
 
-	queryDisplay(queryInsert($con, "test", array('name', 'address'),array("Joel Yek", "BAM Villa, Taman Maluri")));
+	queryDisplay(queryInsert($con, "test", array('name', 'address'),array("$_POST[name]", "$_POST[address]")));
 ?>	
