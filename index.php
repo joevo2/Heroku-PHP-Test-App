@@ -34,7 +34,7 @@
 	#PostgreSQL Databse Connection
 	$con = pg_connect("dbname=dectdccb9d6neh host=ec2-107-20-191-205.compute-1.amazonaws.com 
 		port=5432 user=ilqmgopvoboqqe password=pSt_F9c9Yc4yuJMrYdigezqXAr 
-		sslmode=require") or die('Could not connect: ' . pg_last_error());;
+		sslmode=require") or die('Could not connect: ' . pg_last_error());
 	
 	pg_query($con,"CREATE TABLE 'marker'(
 		'id' INT NOT NULL AUTO_INCREMENT PRIMARY KEY,
@@ -43,11 +43,11 @@
 		'lat' FLOAT(10,6) NOT NULL,
 		'lng' FLOAT(10, 6) NOT NULL
 		) ENGINE = POSTGRES
-		")
+		") or die(pg_last_error();
 
-	$result = pg_query($con, "SHOW COLUMNS FROM marker")
+	$result = pg_query($con, "SHOW COLUMNS FROM marker");
 
-	/*
+	
 	function queryDisplay($result) {
 		$rowCount = pg_num_rows($result);
 		for ($x=0; $x < $rowCount; $x++) { 
@@ -60,6 +60,6 @@
 	}
 
 	queryDisplay($con, $result);
-	*/
+	
 
 ?>	
