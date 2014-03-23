@@ -46,5 +46,5 @@
   		echo "An error Occured! ".pg_last_error()."<br>";
 	}
 
-	//queryDisplay(queryInsert($con, "user", array('name', 'address'),array("Joel Yek", "BAM Villa, Taman Maluri")));
+	queryDisplay(queryInsert($con, "test", array('name', 'address'),array("Joel Yek", "BAM Villa, Taman Maluri")));
 ?>	
