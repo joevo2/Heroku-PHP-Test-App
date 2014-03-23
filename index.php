@@ -3,6 +3,11 @@
 	<head>
 		<title>HELP CAT Carpool</title>
 		<style type="text/css">
+			iframe {
+				float: left;
+				max-width: 400px;
+				width: 100%;
+			}
 		</style>
 	</head>
 	<body>
@@ -17,7 +22,7 @@
 		</iframe>
 
 		<form>
-			<input type="text">
+			<input type="text" placeholder="Testing">
 			<input type="submit">
 		</form>
 
