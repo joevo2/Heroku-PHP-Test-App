@@ -35,17 +35,13 @@
 		sslmode=require") or die('Could not connect: ' . pg_last_error());
 	
 	
-	pg_query($con,"CREATE TABLE 'marker'(
+	pg_query($con,"CREATE TABLE user (
 		'id' INT NOT NULL AUTO_INCREMENT PRIMARY KEY,
 		'name' VARCHAR(60) NOT NULL,
-		'address' VARCHAR(80) NOT NULL,
-		'lat' FLOAT(10,6) NOT NULL,
-		'lng' FLOAT(10, 6) NOT NULL
-		)
-		");
+		'address' VARCHAR(80) NOT NULL)");
 	
 	
-	$result = pg_query($con, "SHOW COLUMNS FROM 'marker'");
+	$result = pg_query($con, "SHOW COLUMNS FROM user");
 
 	
 	function queryDisplay($result) {
