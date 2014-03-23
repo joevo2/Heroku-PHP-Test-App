@@ -42,7 +42,6 @@
 		name VARCHAR(60) NOT NULL,
 		address VARCHAR(80) NOT NULL )");
 	
-	
-	$result = pg_query($con, "SELECT table_name FROM information_schema.tables WHERE table_schema='public'");
-	queryDisplay($result);
+
+	queryDisplay(queryInsert($con, "user", array('name', 'address'),array("Joel Yek", "BAM Villa, Taman Maluri")));
 ?>	
