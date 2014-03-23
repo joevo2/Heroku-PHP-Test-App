@@ -51,5 +51,6 @@
 	}
 	*/
 
-	queryDisplay(queryInsert($con, "test", array('name', 'address'),array("$_POST[name]", "$_POST[address]")));
+	//queryInsert($con, "test", array('name', 'address'),array("$_POST[name]", "$_POST[address]"));
+	queryDisplay(queryAll($con, "test"));
 ?>	
