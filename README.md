@@ -1,7 +1,9 @@
-PHP on Heroku
+Carpool Web App
 ========================
 
-This is a build pack bundling PHP and Apache for Heroku apps.
+The MVP for Carpool app.
+First target would be HELP College/University
+then it will roll out to other University/Colleges
 
 Database
 --------
