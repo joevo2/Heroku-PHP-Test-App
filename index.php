@@ -34,7 +34,7 @@
 <?php
 	#PHP Function and connection
 	include 'function.php';
-	/*
+	
 	#Create Table
 	$sql = "CREATE TABLE user (
 		id SERIAL PRIMARY KEY,
@@ -46,9 +46,8 @@
 	else { 
   		echo "An error Occured! ".pg_last_error()."<br>";
 	}
-	*/
+	
 
-	pg_query("DROP TABLE user");
 
 	//queryInsert($con, "test", array('name', 'address'),array("$_POST[name]", "$_POST[address]"));
 	//queryDisplay(queryAll($con, "test"));
