@@ -34,21 +34,21 @@
 <?php
 	#PHP Function and connection
 	include 'function.php';
-
+	/*
 	#Create Table
 	$sql = "CREATE TABLE user (
 		id SERIAL PRIMARY KEY,
 		name VARCHAR(60) NOT NULL,
 		address VARCHAR(80) NOT NULL)";
-	
 	$query = pg_query($sql);
-
 	if ($query)
-  		echo "Table Created<br>"; // Check to see if The Query Worked.
+  		echo "Table Created<br>"; 
 	else { 
   		echo "An error Occured! ".pg_last_error()."<br>";
 	}
-	
+	*/
+
+	pg_query("DROP TABLE user");
 
 	//queryInsert($con, "test", array('name', 'address'),array("$_POST[name]", "$_POST[address]"));
 	//queryDisplay(queryAll($con, "test"));
