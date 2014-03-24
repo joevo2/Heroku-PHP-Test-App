@@ -39,9 +39,13 @@
 	$con = pg_connect("dbname=dectdccb9d6neh host=ec2-107-20-191-205.compute-1.amazonaws.com 
 		port=5432 user=ilqmgopvoboqqe password=pSt_F9c9Yc4yuJMrYdigezqXAr 
 		sslmode=require") or die('Could not connect: ' . pg_last_error());
+	
 	#Create Table
-	/*
-	$sql = "CREATE TABLE test (id serial,name varchar(60) NOT NULL,address varchar(80) NOT NULL)";
+	$sql = "CREATE TABLE test (
+		id SERIAL AUTO_INCREMENT PRIMARY KEY,
+		name VARCHAR(60) NOT NULL,
+		address VARCHAR(80) NOT NULL)";
+	
 	$query = pg_query($sql);
 
 	if ($query)
@@ -49,8 +53,8 @@
 	else { 
   		echo "An error Occured! ".pg_last_error()."<br>";
 	}
-	*/
-	pg_query($con, "DROP TABLE test");
+	
+
 	//queryInsert($con, "test", array('name', 'address'),array("$_POST[name]", "$_POST[address]"));
 	queryDisplay(queryAll($con, "test"));
 ?>	
