@@ -36,7 +36,7 @@
 	include 'function.php';
 	
 	#Create Table
-	$sql = "CREATE TABLE user (
+	$sql = "CREATE TABLE test (
 		id SERIAL PRIMARY KEY,
 		name VARCHAR(60) NOT NULL,
 		address VARCHAR(80) NOT NULL)";
@@ -50,5 +50,5 @@
 
 
 	//queryInsert($con, "test", array('name', 'address'),array("$_POST[name]", "$_POST[address]"));
-	//queryDisplay(queryAll($con, "test"));
+	queryDisplay(queryAll($con, "test"));
 ?>	
