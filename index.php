@@ -50,7 +50,7 @@
   		echo "An error Occured! ".pg_last_error()."<br>";
 	}
 	*/
-
+	pg_query($con, "DROP TABLE test");
 	//queryInsert($con, "test", array('name', 'address'),array("$_POST[name]", "$_POST[address]"));
 	queryDisplay(queryAll($con, "test"));
 ?>	
