@@ -31,4 +31,18 @@
 		
 		return $result;
 	}
+
+	#Create Table
+	/*
+	$sql = "CREATE TABLE test (
+		id SERIAL PRIMARY KEY,
+		name VARCHAR(60) NOT NULL,
+		address VARCHAR(80) NOT NULL)";
+	$query = pg_query($sql);
+	if ($query)
+  		echo "Table Created<br>"; 
+	else { 
+  		echo "An error Occured! ".pg_last_error()."<br>";
+	}
+	*/
 ?>
