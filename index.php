@@ -12,10 +12,19 @@
 				max-width: 450px;
 				width: 100%;
 			}
+
+			.panel {
+				float: right;
+			}
 		</style>
 	</head>
 	<body>
-		<h1>HELP CAT Car Pool Database</h1>
+		<?php include "views/fblogin.php"; ?>
+		<div class="panel">
+			<button onclick="location.href='views/admin.php'">Admin Panel</button>
+			<button onclick="location.href='views/feedback.php'">Feedback</button>
+		</div>
+		<h1>Carpool Database</h1>
 		<!-- Google Map Embed -->
 		<iframe class="mapbox" 
 		  width="500"
@@ -24,7 +33,7 @@
 		  src="https://www.google.com/maps/embed/v1/place?key=AIzaSyDsA-rWJVhqWo5XhCH3f6eOwjQol2hyCCc
 		    &q=HELP+College+of+Arts+and+Technology">
 		</iframe>
-		<?php include "form.php" ?>
+		<?php include "views/form.php" ?>
 	</body>
 <html>
 
