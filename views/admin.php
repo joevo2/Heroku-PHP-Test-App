@@ -14,7 +14,7 @@
 		<h1>Carpool for HELP CAT</h1>
 		<h2>Admin Panel</h2>
 		<?php 
-			include "function.php";
+			include "../function.php";
 
 			
 		?>
