@@ -8,9 +8,20 @@
 		<form action="" method="post">
 			<input type="text" name="email" placeholder="Email">
 			<br>
-			<textarea cols='40' rows='15' placeholder="Feedback"></textarea>
+			<textarea cols='40' rows='15' placeholder="Feedback" name="feedback"></textarea>
 			<br>
 			<input type="submit" name="feedbackSubmit" value="Send">
 		</form>
+		<?php
+			#Form insertion
+			$email = $Feedback = "";
+			if (isset($_POST['email'])) {
+				$email = $_POST['email'];
+			}
+			if (isset($_POST['feedback'])) {
+				$feedback = $_POST['feedback'];
+			}
+			queryInsert($con, "feedback", array('email', 'feedback'),array("$email", "$feedback"));
+		?>
 	</body>
 </html>

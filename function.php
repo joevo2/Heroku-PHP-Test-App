@@ -40,10 +40,11 @@
 	}
 
 	#Create Table
-	
+	/*
 	$sql = "CREATE TABLE feedback (
 		id SERIAL PRIMARY KEY,
 		email VARCHAR(60) NOT NULL,
 		feedback VARCHAR(80) NOT NULL)";
 	pg_query($sql) or die(pg_last_error());	
+	*/
 ?>
