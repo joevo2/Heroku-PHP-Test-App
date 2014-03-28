@@ -34,21 +34,6 @@
 			</div>
 			<div class="display">
 				<?php
-					#PHP Function and connection
-					include 'function.php';
-
-					#Form insertion
-					$name = $address = $sex = "";
-					if (isset($_POST['name'])) {
-						$name = $_POST['name'];
-					}
-					if (isset($_POST['address'])) {
-						$address = $_POST['address'];
-					}
-					if (isset($_POST['sex'])) {
-						$sex = $_POST['sex'];
-					}
-					queryInsert($con, "test", array('name', 'address','sex'),array("$name", "$address","$sex"));
 					queryDisplay(queryAll($con, "test"));
 				?>	
 			</div>	

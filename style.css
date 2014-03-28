@@ -33,6 +33,10 @@
 	img {
 		width: 100%;
 	}
+	.err {
+			color: red;
+			font-style: italic;
+	}
 
 	@media screen and (max-width: 720px) {
 		html {
@@ -48,6 +52,4 @@
 		.panel {
 		float: right;
 		}
-
-
 	}

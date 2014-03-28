@@ -24,6 +24,9 @@
 				$feedback = $_POST['feedback'];
 			}
 			queryInsert($con, "feedback", array('email', 'feedback'),array($email, $feedback));
+			if (isset($_POST['feedbackSubmit'])) {
+				echo "<script>window.close();</script>";
+			}
 		?>
 	</body>
 </html>
