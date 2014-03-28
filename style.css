@@ -1,0 +1,43 @@
+	html {
+		width: 85%;
+		margin: 0 auto;
+	}
+
+	.mapbox {
+		max-width: 450px;
+		width: 100%;
+	}
+
+	.panel {
+		float: right;
+	}
+
+	.button {
+		border: 0;
+		padding: 10px;
+		background-color: grey;
+		color: white;
+	}
+
+	.form {
+	}
+
+	.display {
+	}
+
+	.col-1 {
+		width: 40%;
+		float: left;
+		margin: 10px;
+	}
+
+	.col-2 {
+		
+	}
+	img {
+		width: 100%;
+	}
+
+	@media (max-width: 500px) {
+
+	}
