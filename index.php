@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 	<head>
-		<title>HELP CAT Carpool</title>
+		<title>Carpool for HELP CAT</title>
 		<link rel="stylesheet" type="text/css" href="style.css">
 	</head>
 	<body>
@@ -9,9 +9,10 @@
 		<div class="panel">
 			<button class="button" onclick="location.href='views/admin.php'">Admin Panel</button>
 			<!--<button class="button" onclick="location.href='views/feedback.php'">Feedback</button>-->
-			<button class="button" onclick="window.open('views/feedback.php','win2','status=no,toolbar=no,scrollbars=yes,titlebar=no,menubar=no,resizable=yes,width=400,height=400,directories=no,location=no')">Feedback</button>
+			<button class="button" onclick="window.open('views/feedback.php','win2','status=no,toolbar=no,scrollbars=yes,titlebar=no,menubar=no,resizable=yes,width=400,height=400,directories=no,location=no')">
+			Feedback</button>
 		</div>
-		<h1>Carpool Database</h1>
+		<h1>Carpool for HELP CAT</h1>
 		<!-- Google Map Embed -->
 		<div class="col-1">
 			<img src="http://placehold.it/500x600&text=Map">

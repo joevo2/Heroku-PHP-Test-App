@@ -4,7 +4,7 @@
 		<link rel="stylesheet" type="text/css" href="style.css">
 	</head>
 	<body>
-		<h1>Feedback Panel</h1>
+		<h1>Feedback</h1>
 		<form action="" method="post">
 			<input type="text" name="email" placeholder="Email">
 			<br>
@@ -13,15 +13,17 @@
 			<input type="submit" name="feedbackSubmit" value="Send">
 		</form>
 		<?php
+			include "../function.php";
+
 			#Form insertion
-			$email = $Feedback = "";
+			$email = $feedback = "";
 			if (isset($_POST['email'])) {
 				$email = $_POST['email'];
 			}
 			if (isset($_POST['feedback'])) {
 				$feedback = $_POST['feedback'];
 			}
-			queryInsert($con, "feedback", array('email', 'feedback'),array("$email", "$feedback"));
+			queryInsert($con, "feedback", array('email', 'feedback'),array($email, $feedback));
 		?>
 	</body>
 </html>

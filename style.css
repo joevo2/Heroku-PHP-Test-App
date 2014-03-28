@@ -30,14 +30,24 @@
 		float: left;
 		margin: 10px;
 	}
-
-	.col-2 {
-		
-	}
 	img {
 		width: 100%;
 	}
 
 	@media (max-width: 500px) {
+		html {
+			width: 95%;
+		}
+		.col-1 {
+			width: 100%;
+			display: block;
+			float: none;
+			margin: 0;
+		}
+
+		.panel {
+		float: right;
+		}
+
 
 	}
