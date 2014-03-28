@@ -14,6 +14,7 @@
 		<!-- Google Map Embed -->
 		<div class="col-1">
 			<img src="http://placehold.it/500x600&text=Map">
+			
 			<!--
 			<iframe class="mapbox" 
 			  width="500"
@@ -23,6 +24,7 @@
 			    &q=HELP+College+of+Arts+and+Technology">
 			</iframe>
 			-->
+
 		</div>
 		<div class="col-1">
 			<div class="form">
