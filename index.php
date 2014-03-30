@@ -15,7 +15,7 @@
 		<h1>Carpool for HELP CAT</h1>
 		<!-- Google Map Embed -->
 		<div class="col-1">
-			<img src="http://placehold.it/500x600&text=Map">
+			<img src="http://placehold.it/600x700&text=Map">
 
 			<!--
 			<iframe class="mapbox" 
@@ -34,7 +34,7 @@
 			</div>
 			<div class="display">
 				<?php
-					queryDisplay(queryAll($con, "test"));
+					queryDisplay(queryAll($con, $table));
 				?>	
 			</div>	
 		</div>

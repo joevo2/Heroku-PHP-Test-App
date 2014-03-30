@@ -1,15 +1,17 @@
 	<?php 
 		#PHP Function and connection
 		include 'function.php';
+
+		$table = "carpooler";
 		$errName = $errEmail = $errSex = NULL;
 	?>
 	<form action="" method="post">
 		<input type="text" name="name" placeholder="Your Name">
 		<span class="err">* <?php echo $errName;?> </span><br>
-		<input type="text" name="address" placeholder="Your email">
+		<input type="text" name="email" placeholder="Your email">
 		<span class="err">* <?php echo $errEmail;?> </span><br>
-		<input type="radio" name="sex" value="male">Male<br>
-		<input type="radio" name="sex" value="female">Female<br>
+		<input type="radio" name="sex" value="Male">Male<br>
+		<input type="radio" name="sex" value="Female">Female<br>
 		<span class="err">* <?php echo $errSex;?> </span><br>
 		<input type="submit" value="Submit"><br>
 	</form>
@@ -25,6 +27,6 @@
 			$errSex = "Please specify your gender";
 		}
 		else
-			queryInsert($con, "test", array('name', 'address','sex'),array("$_POST[name]", "$_POST[email]","$_POST[sex]"));
+			queryInsert($con, $table, array('name', 'email','sex'),array("$_POST[name]", "$_POST[email]","$_POST[sex]"));
 	 ?>
 
