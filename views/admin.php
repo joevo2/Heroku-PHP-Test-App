@@ -11,7 +11,7 @@
 		</style>
 	</head>
 	<body>
-		<h1>Carpool for HELP CAT</h1>
+		<a href="/carpool/index.php"><h1>Carpool for HELP CAT</h1></a>
 		<h2>Admin Panel</h2>
 		<?php 
 			include "../function.php";
