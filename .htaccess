@@ -1,1 +1,2 @@
 ErrorDocument 404 /../views/404.php
+ErrorDocument 400 /../views/404.php
