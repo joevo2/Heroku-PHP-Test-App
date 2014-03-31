@@ -10,7 +10,7 @@
 	</head>
 	<body>
 		<div>
-			<a href="/carpool/index.php"><h1>Carpool for HELP CAT</h1></a>
+			<a href="/../index.php"><h1>Carpool for HELP CAT</h1></a>
 			<h3>Sign Up</h3>
 			<form method="submit" action="">
 				Email<input type="text" name="email"><br>
