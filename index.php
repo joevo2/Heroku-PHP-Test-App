@@ -21,7 +21,7 @@
 			<img src="http://placehold.it/600x700&text=Map">
 		</div>
 		<div class="col-1">
-			<div class="form">
+			<div>
 				<?php include "form.php" ?>
 			</div>
 			<div class="display">

@@ -3,22 +3,40 @@
 	<head>
 		<link rel="stylesheet" type="text/css" href="../style.css">
 		<style type="text/css">
-		
+			div.box {
+				margin-left: auto;
+			    margin-right: auto;
+			    padding: 10px;
+			    width: 100%;
+			    max-width: 300px;
+			}
+
+			input.btn {
+				font-size: 15px;
+				border-radius:5px;
+				border: none;
+				padding: 10px;
+				background-color: purple;
+				color: white;
+			}
 		</style>
 	</head>
 	<body>
-		<div>
-			<a href="../index.php"><h1>Carpool for HELP CAT</h1></a>
-			<h3>Login</h3>
+		<a href="../index.php"><h1>Carpool for HELP CAT</h1></a>
+		<div class="box">
+			<h3>Sign In</h3>
 			<form method="submit" action="">
-				Email<input type="text" name="email"><br>
-				Password<input type="text" name="password"><br>
-				<input type="submit" value="Login">
+				<input class="form" type="text" name="email"  placeholder="Email"><br>
+				<input class="form" type="text" name="password" placeholder="Password"><br>
+				<br>
+				<input class="btn" type="submit" value="Login">
 			</form>
+
 			<?php
 				include "../function.php";
 
 				$table = "carpooler";
+				
 				  
 			?>
 		</div>

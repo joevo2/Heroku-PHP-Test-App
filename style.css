@@ -14,7 +14,33 @@
 	
 	.panel {
 		float: right;
+		border: none;
 	}
+
+	.form {
+		background: white;
+		width: 200px;
+		border: 1px solid grey;
+		padding: 10px;
+		margin: 5px;
+	}
+	div.box {
+		margin-left: auto;
+	    margin-right: auto;
+	    padding: 10px;
+	    width: 100%;
+	    max-width: 300px;
+	}
+
+	input.btn {
+		font-size: 15px;
+		border-radius:5px;
+		border: none;
+		padding: 10px;
+		background-color: purple;
+		color: white;
+	}
+
 	button{
 		font-size: 15px;
 		border-radius:5px;
