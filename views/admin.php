@@ -11,7 +11,7 @@
 		</style>
 	</head>
 	<body>
-		<a href="/carpool/index.php"><h1>Carpool for HELP CAT</h1></a>
+		<a href="/../index.php"><h1>Carpool for HELP CAT</h1></a>
 		<h2>Admin Panel</h2>
 		<h3>Feedback</h3>
 		<?php 
