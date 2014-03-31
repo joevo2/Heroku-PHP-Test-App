@@ -3,20 +3,37 @@
 		margin: 0 auto;
 	}
 
+	img {
+		width: 100%;
+	}
+
 	.mapbox {
 		max-width: 450px;
 		width: 100%;
 	}
-
+	
 	.panel {
 		float: right;
 	}
+	button{
+		font-size: 15px;
+	}
 
-	.button {
-		border: 0;
+	button.btn{
+		border: none;
 		padding: 10px;
-		background-color: grey;
+		background-color: blue;
 		color: white;
+	}
+
+	button.btnReg{
+		border: 1;
+		padding: 8px;
+		color: blue;
+		font-weight: bold;
+		border-color: blue;
+		background-color: white;
+		border-style: solid;
 	}
 
 	.form {
@@ -30,9 +47,7 @@
 		float: left;
 		margin: 10px;
 	}
-	img {
-		width: 100%;
-	}
+	
 	.err {
 			color: red;
 			font-style: italic;
