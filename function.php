@@ -12,7 +12,8 @@
 		port=5432 user=Joel password=jj021192 
 		") or die('Could not connect: ' . pg_last_error());
 	
-	
+	$table = "test";
+
 	#Commonly used SQL function	
 	function queryDisplay($result) {
 		$rowCount = pg_num_rows($result);
@@ -44,10 +45,10 @@
 
 	#Create Table
 	/*
-	$sql = "CREATE TABLE feedback (
+	$sql = "CREATE TABLE carpooler (
 		id SERIAL PRIMARY KEY,
 		email VARCHAR(60) NOT NULL,
-		feedback VARCHAR(1000) NOT NULL)";
+		password VARCHAR(12) NOT NULL)";
 	pg_query($sql) or die(pg_last_error());	
 	*/
 ?>

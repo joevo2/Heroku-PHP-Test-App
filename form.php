@@ -2,7 +2,6 @@
 		#PHP Function and connection
 		include 'function.php';
 
-		$table = "carpooler";
 		$errName = $errEmail = $errSex = NULL;
 	?>
 	<form action="" method="post">
