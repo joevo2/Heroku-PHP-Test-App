@@ -1,11 +1,9 @@
 <!DOCTYPE html>
 <html>
 	<head>
+		<link rel="stylesheet" type="text/css" href="../style.css">
 		<style type="text/css">
-			html {
-				width: 85%;
-				margin: 0 auto;
-			}
+		
 		</style>
 	</head>
 	<body>

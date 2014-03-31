@@ -6,15 +6,7 @@
 	img {
 		width: 100%;
 	}
-
-	a:link {
-		color: none;
-	}
-
-	a:visited {
-		color: none;
-	}
-
+	
 	.mapbox {
 		max-width: 450px;
 		width: 100%;
