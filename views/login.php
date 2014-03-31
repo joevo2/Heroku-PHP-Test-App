@@ -18,9 +18,9 @@
 				<input type="submit" value="Login">
 			</form>
 			<?php
-				include "function.php";
+				include "../function.php";
 
-				$table = carpooler;
+				$table = "carpooler";
 				  
 			?>
 		</div>

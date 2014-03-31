@@ -19,6 +19,14 @@
 
 				<input type="submit" value="Sign Up">
 			</form>
+
+			<?php
+				include "../function.php";
+
+				$table = "carpooler";
+				
+				  
+			?>
 		</div>
 	</body>
 </html>
