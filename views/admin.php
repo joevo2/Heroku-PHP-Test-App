@@ -12,7 +12,7 @@
 		<h2>Admin Panel</h2>
 		<h3>Feedback</h3>
 		<?php 
-			include "../function.php";
+			include '../modal/function.php';
 			$table = "feedback";
 
 			queryDisplay(queryAll($con, $table));

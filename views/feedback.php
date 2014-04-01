@@ -13,7 +13,7 @@
 			<input type="submit" name="feedbackSubmit" value="Send">
 		</form>
 		<?php
-			include "../function.php";
+			include "../modal/function.php";
 
 			#Form insertion
 			$email = $feedback = "";

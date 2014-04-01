@@ -22,7 +22,7 @@
 		</div>
 		<div class="col-1">
 			<div>
-				<?php include "form.php" ?>
+				<?php include "views/form.php" ?>
 			</div>
 			<div class="display">
 				<?php

@@ -19,11 +19,10 @@
 			</form>
 
 			<?php
-				include "../function.php";
+				include "../modal/function.php";
 
 				$table = "carpooler";
 				
-				  
 			?>
 		</div>
 	</body>
