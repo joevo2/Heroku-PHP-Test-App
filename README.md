@@ -13,7 +13,6 @@ Using PostgreSQL
 Maps
 ----
 
-Google Maps JavaScript API 3
-20k Daily limit for 90 consecutive day
+Google Maps JavaScript API 3 with 20k Daily limit for 90 consecutive day
 
 
