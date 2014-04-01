@@ -1,14 +1,10 @@
 	html {
 		width: 85%;
 		margin: 0 auto;
+		font-family: 'Open Sans','Helvetica Neue',Helvetica,Arial,sans-serif;
 	}
 
 	img {
-		width: 100%;
-	}
-	
-	.mapbox {
-		max-width: 450px;
 		width: 100%;
 	}
 	
@@ -19,10 +15,12 @@
 
 	.form {
 		background: white;
-		width: 200px;
+		width: 100%;
+		max-width: 300px;
 		border: 1px solid grey;
-		padding: 10px;
+		padding: 15px;
 		margin: 5px;
+		font-size: 15px;
 	}
 	div.box {
 		margin-left: auto;
@@ -37,7 +35,7 @@
 		border-radius:5px;
 		border: none;
 		padding: 10px;
-		background-color: purple;
+		background-color: blue;
 		color: white;
 	}
 
@@ -49,24 +47,18 @@
 	button.btn{
 		border: none;
 		padding: 10px;
-		background-color: purple;
+		background-color: blue;
 		color: white;
 	}
 
 	button.btnReg{
 		border: 1;
 		padding: 8px;
-		color: purple;
+		color: blue;
 		font-weight: bold;
-		border-color: purple;
+		border-color: blue;
 		background-color: white;
 		border-style: solid;
-	}
-
-	.form {
-	}
-
-	.display {
 	}
 
 	.col-1 {

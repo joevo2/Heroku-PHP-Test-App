@@ -4,7 +4,28 @@
 		<title>Carpool for HELP CAT</title>
 		<link rel="stylesheet" type="text/css" href="style.css">
 		<style type="text/css">
-			
+			html { 
+			  background: url(http://imgur.com/cyBLJMy.jpg) no-repeat center center fixed; 
+			  background-size: cover;
+			  font-family: 'Open Sans','Helvetica Neue',Helvetica,Arial,sans-serif;
+			}
+
+			.col-1 {
+				border: 1px solid white; 
+				border-radius: 20px;
+				width: 300px;
+				height: 300px;
+				background-color: white;
+				box-shadow: 0px 0px 24px rgba(0, 0, 0, 0.333);
+			}
+
+			.col-2 {
+				font-size: 30px;
+				color: white;
+				width: 40%;
+				float: left;
+				margin: 10px;
+			}
 		</style>
 	</head>
 	<body>
@@ -21,17 +42,10 @@
 		<h1>Carpool for HELP CAT</h1>
 		<!-- Google Map Embed -->
 		<div class="col-1">
-			<img src="http://placehold.it/600x700&text=Map">
+			
 		</div>
-		<div class="col-1">
-			<div>
-				<?php include "views/form.php" ?>
-			</div>
-			<div class="display">
-				<?php
-					queryDisplay(queryAll($con, $table));
-				?>	
-			</div>	
+		<div class="col-2">
+			<p>Testing one two three</p>
 		</div>
 	</body>
 <html>
