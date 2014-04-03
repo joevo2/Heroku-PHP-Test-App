@@ -7,7 +7,6 @@
 			html { 
 			  background: url(http://imgur.com/cyBLJMy.jpg) no-repeat center center fixed; 
 			  background-size: cover;
-			  font-family: 'Open Sans','Helvetica Neue',Helvetica,Arial,sans-serif;
 			}
 
 			.col-1 {
