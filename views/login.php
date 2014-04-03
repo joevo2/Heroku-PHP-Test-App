@@ -25,7 +25,7 @@
 		<a href="../index.php"><h1>Carpool for HELP CAT</h1></a>
 		<div class="box">
 			<h3>Sign In</h3>
-			<form method="submit" action="">
+			<form method="post" action="">
 				<input class="form" type="text" name="email"  placeholder="Email"><br>
 				<input class="form" type="password" name="password" placeholder="Password"><br>
 				<br>
