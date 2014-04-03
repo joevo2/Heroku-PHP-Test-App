@@ -12,8 +12,7 @@
 			<h3>Sign Up</h3>
 			<form method="submit" action="">
 				<input class="form" type="text" name="email"  placeholder="Email"><br>
-				<input class="form" type="text" name="password" placeholder="Password"><br>
-				<input class="form" type="text" name="password2" placeholder="Re-enter Password"><br>
+				<input class="form" type="password" name="password" placeholder="Password"><br>
 				<br>
 				<input class="btn" type="submit" value="Sign Up">
 			</form>
