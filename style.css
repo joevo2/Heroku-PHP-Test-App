@@ -86,4 +86,8 @@
 		.panel {
 		float: right;
 		}
+
+		.form {
+			width: 90%;
+		}
 	}
