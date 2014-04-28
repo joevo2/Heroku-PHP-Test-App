@@ -1,5 +1,5 @@
 	html {
-		width: 85%;
+		width: 90%;
 		margin: 0 auto;
 		font-family: 'Open Sans','Helvetica Neue',Helvetica,Arial,sans-serif;
 	}
@@ -62,7 +62,7 @@
 	}
 
 	.col-1 {
-		width: 40%;
+		width: 45%;
 		float: left;
 		margin: 10px;
 	}
