@@ -1,3 +1,4 @@
+html { font-family: sans-serif;}
 .container{
     width: 100%;
     min-height: 100%;
@@ -10,19 +11,24 @@
     height: 80px;
     position: fixed;
     background:-webkit-linear-gradient(rgba(92,92,92,1),rgba(92,92,92,0));
-    
     z-index: 1;
 }
 
 #logo {
-    font-family: fantasy;
     color: #8DE2FF;
-    margin-left: 30px;
+    margin-left: 10%;
+    background-color: black;
+    display: inline-block;
+    padding: 5px 10px;
+    border-radius: 8px;
+    display: inline-block;
 }
 
+
 #needaride {
-    padding-top: 200px;
-    padding-left: 100px;
+    padding-top: 300px;
+    margin-left: 10%;
+    margin-bottom: 0px;
     font-size: 400%;
     text-shadow: 2px 2px 10px black;
     color: white;
@@ -39,28 +45,69 @@
 
 }
 
+.img p {
+    margin-top: 0px;
+    margin-left:10%;
+    text-shadow: 2px 2px 10px black;
+    color: white;
+}
+
+#trynow {
+    margin-left: 10%;
+    padding: 10px 20px;
+    background-color: #0099FF;
+    display: inline-block;
+    border-radius: 8px;
+}
+
+#whycarpool {
+    text-align: center;
+}
 .benefit {
     width: 100%;
     min-height: 100%;
     position: relative;
-    border-bottom: 1px solid black;
+    margin-top: 60px;
+}
+
+.row {
+    text-align: center;
+    
+}
+
+.reason {
+    display: inline-block;
+    min-width: 100px;
+    max-width: 250px;
+    margin: 10px;
+    vertical-align: text-top;
 }
 
 .benefit-pic {
-    background-color: blue;
-    margin-left: 15%;
-    width: 300px;
-    height:300px;
-    margin-bottom: 10px;
-    margin-top: 10px;
+    background:url("Optimized-DSC_1408.JPG");
+    width: 200px;
+    height: 200px;
+    margin-left: 10%;
+    margin-bottom: 20px;
+    margin-top: 20px;
     display: inline-block;
+    vertical-align: text-top;
 }
 
 .benefit-info {
-    background-color: yellow;
-    margin-left: 15%;
-    margin-top: 0px;
-    width: 500px;
     display: inline-block;
+    vertical-align: text-top;
+    margin-left: 10%;
+    margin-bottom: 20px;
+    margin-top: 20px;
+    min-width: 200px;
+    max-width: 50%;
 }
+
+.footer{
+    border-top: 1px solid grey;
+    text-align: center;
+    margin: 100px;
+}
+
     
