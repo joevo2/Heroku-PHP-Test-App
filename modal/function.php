@@ -33,6 +33,23 @@
 		return $result;
 	}
 
+	function queryItem($table, $col, $item) {
+		if (is_array($col) && is_array($item)) {
+			$query = "SELECT * FROM $table WHERE ";
+			for ($i=0; $i < count($item); $i++) {
+				$query .= $col[$i] . " = '" . $item[$i] . "'";
+				if ($i != count($item)-1) {
+					$query .= " AND ";
+				}
+			}
+		} else {
+			$query = "SELECT * FROM $table WHERE $col = '$item'";
+		}
+		$result = pg_query($query) or die(pg_last_error());
+
+		return $result;
+	}
+
 	#Create Table
 	/*
 	$sql = "CREATE TABLE users (
