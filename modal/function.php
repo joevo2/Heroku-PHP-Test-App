@@ -1,7 +1,6 @@
 <?php
 	#Connection
 	include "con.php";
-	$table = "test";
 
 	#Commonly used SQL function	
 	function queryDisplay($result) {
@@ -33,11 +32,13 @@
 	}
 
 	#Create Table
-	/*
+	
 	$sql = "CREATE TABLE carpooler (
 		id SERIAL PRIMARY KEY,
-		email VARCHAR(60) NOT NULL,
-		password VARCHAR(12) NOT NULL)";
+		name VARCHAR(60),
+		email VARCHAR(60),
+		password VARCHAR(12),
+		gender VARCHAR(6))";
 	pg_query($sql) or die(pg_last_error());	
-	*/
+	
 ?>
