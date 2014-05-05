@@ -18,9 +18,6 @@
 				width: 150px;
 				margin: 10px auto;
 			}
-			a {
-				text-decoration: none;
-			}
 		</style>
 	</head>
 	<body>
@@ -37,7 +34,7 @@
 				<input type="checkbox">I agree to to <a href="terms.html">CarPool Terms</a>  <br>
 				<div class="signup">
 				<input class="btn" type="submit" name="signUp" value="Sign Up">
-				&nbsp or <a href="signin.html">Sign In
+				&nbsp or <a href="signin.php">Sign In
 				</div>
 			</form>
 		</div>
