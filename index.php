@@ -34,7 +34,7 @@
 				?>
 				-->	
 				<?php include "tab.php" ?>
-				 <iframe seamless src="tab.php"></iframe> 
+				 
 			</div>	
 		</div>
 	</body>

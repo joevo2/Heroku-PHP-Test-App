@@ -42,12 +42,6 @@
 		[type=radio]:checked ~ label ~ .content {
 		  z-index: 1;
 		}
-
-		.box {
-			width: 960px;
-			margin: 100px auto;
-			display: block;
-		}
 	</style>
 </head>
 <body>
