@@ -64,6 +64,11 @@
 		border-style: solid;
 	}
 
+	.submitbox {
+		width: 140px;
+		margin: 10px auto;
+	}
+
 	.col-1 {
 		width: 45%;
 		float: left;

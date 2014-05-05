@@ -3,21 +3,13 @@
 	<head>
 		<link rel="stylesheet" type="text/css" href="../style.css">
 		<style type="text/css">
-			div.box {
-				margin-left: auto;
-			    margin-right: auto;
-			    padding: 10px;
-			    width: 100%;
-			    max-width: 300px;
+			
+			.form {
+				max-width: 300px;
+				display: inline-block;
 			}
-
-			input.btn {
-				font-size: 15px;
-				border-radius:5px;
-				border: none;
-				padding: 10px;
-				background-color: purple;
-				color: white;
+			.btn {
+				margin: 10px 0px;
 			}
 		</style>
 	</head>
@@ -29,7 +21,10 @@
 				<input class="form" type="text" name="email"  placeholder="Email"><br>
 				<input class="form" type="password" name="password" placeholder="Password"><br>
 				<br>
-				<input class="btn" type="submit" value="Login">
+				<div class="submitbox">
+				<input class="btn" type="submit" value="Sign In">
+				&nbsp or <a href="signup.php">Sign Up</a>
+				</div>
 			</form>
 
 			<?php

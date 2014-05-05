@@ -4,20 +4,14 @@
 		<title>Sign Up</title>
 		<link rel="stylesheet" type="text/css" href="../style.css">
 		<style type="text/css">
-			form {
-				max-width: 300px;
-				display: inline-block;
-			}
 			.form {
 				max-width: 300px;
+				display: inline-block;
 			}
 			.btn {
 				margin: 10px 0px;
 			}
-			.signup{
-				width: 150px;
-				margin: 10px auto;
-			}
+			
 		</style>
 	</head>
 	<body>
@@ -32,9 +26,9 @@
 				<input type="radio" name="gender" value="Female">Female
 				<br><br>
 				<input type="checkbox">I agree to to <a href="terms.html">CarPool Terms</a>  <br>
-				<div class="signup">
+				<div class="submitbox">
 				<input class="btn" type="submit" name="signUp" value="Sign Up">
-				&nbsp or <a href="signin.php">Sign In
+				&nbsp or <a href="signin.php">Sign In 
 				</div>
 			</form>
 		</div>
