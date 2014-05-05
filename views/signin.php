@@ -3,12 +3,8 @@
 	<head>
 		<link rel="stylesheet" type="text/css" href="../style.css">
 		<style type="text/css">
-			
-			.form {
-				max-width: 300px;
-				display: inline-block;
-			}
 			.btn {
+				width: 335px;
 				margin: 10px 0px;
 			}
 		</style>
@@ -16,7 +12,7 @@
 	<body>
 		<a href="../index.php"><h1>Carpool for HELP CAT</h1></a>
 		<div class="box">
-			<h3>Sign In</h3>
+			<h2>Sign In</h2>
 			<form method="post" action="">
 				<input class="form" type="text" name="email"  placeholder="Email"><br>
 				<input class="form" type="password" name="password" placeholder="Password"><br>

@@ -4,11 +4,8 @@
 		<title>Sign Up</title>
 		<link rel="stylesheet" type="text/css" href="../style.css">
 		<style type="text/css">
-			.form {
-				max-width: 300px;
-				display: inline-block;
-			}
 			.btn {
+				width: 335px;
 				margin: 10px 0px;
 			}
 			
@@ -17,7 +14,7 @@
 	<body>
 		<a href="../index.php"><h1>Carpool for HELP CAT</h1></a>
 		<div class="box">
-			<h3>Sign Up</h3>
+			<h2>Sign Up</h2>
 			<form action="../controller/signup_con.php" method="post">
 				<input class="form" type="text" name="name" placeholder="Name">
 				<input class="form" type="text" name="email" placeholder="Email">
