@@ -11,7 +11,7 @@
 		</style>
 	</head>
 	<body>
-		<a href="../index.php"><h1>Carpool for HELP CAT</h1></a>
+		<a href="../index.php"><h1>CarPool</h1></a>
 		<div class="box">
 			<h2>Sign In</h2>
 			<form method="post" action="">
