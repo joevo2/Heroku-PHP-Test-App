@@ -19,7 +19,8 @@
 				<br>
 				<div class="submitbox">
 				<input class="btn" type="submit" value="Sign In">
-				&nbsp or <a href="signup.php">Sign Up</a>
+				&nbsp or <a href="signup.php">Sign Up</a><br>
+				<a href="passreset.php">Forget your password?</a>
 				</div>
 			</form>
 
