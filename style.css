@@ -76,7 +76,7 @@
 		font-style: italic;
 	}
 
-	@media screen and (max-width: 800px) {
+	@media screen (max-width: 800px) {
 		html {
 			width: 95%;
 		}
