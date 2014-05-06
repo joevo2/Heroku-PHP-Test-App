@@ -17,17 +17,16 @@
 	}
 
 	.form {
+        width: 310px;
 		background: white;
-		width: 100%;
 		border: 1px solid grey;
 		padding: 15px;
-		margin: 10px 0px;
+		margin: 5px 0px;
 		font-size: 15px;
 	}
 	div.box {
 		margin: 50px auto;
-	    width: 100%;
-	    max-width: 300px;
+	    max-width: 350px;
 	}
 
 	input.btn {
