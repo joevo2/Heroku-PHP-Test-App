@@ -11,21 +11,25 @@
 			array('name','email','password','gender'),
 			array($name, $email, $password, $gender));
 		if ($result) {
-			echo "Registration Succesful";
+			return $response = "<h3>Thank You! For Signing Up</h3>";
 		}	
 	}	
 
-	if (isset($_POST['signUp'])) {
-		newUser();
-		header("Location: ../views/thanks.html");
-	}
-
 	function signUp() {
-		if (isset($_POST['email'])) {
-			$query = pg_query("SELECT * FROM $table WHERE email = '$_POST[email]' 
-				AND '$_POST[password]'") or die(pg_last_error());
+		$table = "users";
+		if (!empty($_POST['email'])) {
+			$query = pg_query("SELECT * FROM $table WHERE email = '$_POST[email]'") or die(pg_last_error());
+			if (!$row = pg_fetch_array($query) or die(pg_last_error())) {
+				newUser();	
+			} else {
+				return $response = "<h3>Email has been registered</h3>";
+			}
 		}
 	}
 
+	if (isset($_POST['signUp'])) {
+		$response = signUp();
+		header("Location: ../views/thanks.php");
+	}
 
 ?>

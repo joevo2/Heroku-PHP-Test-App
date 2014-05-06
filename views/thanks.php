@@ -9,13 +9,16 @@
 	<body>
 		<a href="../index.php"><h1>Carpool for HELP CAT</h1></a>
 		<div class="box">
-			<h3>Thank You! For Signing Up</h3>
+			<?php
+				require '../controller/signup_con.php';
+				echo $response;
+			?>
 		</div>
-		<script type="text/javascript">
+		<!--script type="text/javascript">
 			setTimeout(function () {
 			   window.location.href= '../index.php'; // the redirect goes here
 
 			},5000);
-		</script>
+		</script-->
 	</body>
 </html>

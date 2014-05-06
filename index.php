@@ -22,20 +22,11 @@
 		<!-- Google Map Embed -->
 		<div class="col-1">
 			<div id="map-canvas"></div>
-			<!-- Image placeholder -->
-			<!--img src="http://placehold.it/500x500"-->
 		</div>
 		<div class="col-1">
 			<div class="display">
 			<h3>Driver Nearby</h3>
-				<!--
-				<?php
-					include "modal/function.php";
-					queryDisplay(queryAll($con, $table));
-				?>
-				-->	
-				<?php include "tab.php" ?>
-				 
+			<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus ullamcorper faucibus diam, id viverra leo malesuada id. Mauris quis cursus justo. Nam auctor diam a odio ultrices, vel adipiscing dolor tempus. Nulla id semper nunc. Nam quis enim in erat feugiat ultrices vel et nulla. Vestibulum eleifend turpis ac magna tincidunt tincidunt. Maecenas varius porttitor leo, eu lacinia nisi consequat eu. Donec vel arcu laoreet, eleifend purus ut, sodales neque. Pellentesque non ante pulvinar, ultrices ante a, malesuada dolor. Curabitur porttitor sem mauris, quis ultrices turpis posuere id. Phasellus ut scelerisque massa. Cras tincidunt molestie orci eget rhoncus. Sed a eleifend tortor. </p>
 			</div>	
 		</div>
 	</body>

@@ -1,89 +1,91 @@
+html {
+	width: 90%;
+	margin: 0 auto;
+	font-family: 'Open Sans','Helvetica Neue',Helvetica,Arial,sans-serif;
+}
+
+img {
+	width: 100%;
+}
+
+a {
+	text-decoration: none;
+}
+.panel {
+	float: right;
+	border: none;
+}
+
+.form {
+    width: 315px;
+	background: white;
+	border: 1px solid grey;
+	padding: 15px;
+	margin: 5px auto;
+	font-size: 15px;
+}
+div.box {
+	margin: 50px auto;
+    width: 350px;
+}
+
+input.btn {
+	font-size: 15px;
+	border-radius:5px;
+	border: none;
+	padding: 15px;
+	background-color: #4d4dff;
+	color: white;
+}
+
+button{
+	font-size: 15px;
+	border-radius:5px;
+}
+
+button.btn{
+	border: none;
+	padding: 10px;
+	background-color: #4d4dff;
+	color: white;
+}
+
+button.btnReg{
+	border: 1;
+	padding: 8px;
+	color: #4d4dff;
+	font-weight: bold;
+	border-color: #4d4dff;
+	background-color: white;
+	border-style: solid;
+}
+
+.submitbox {
+	margin: 10px 0;
+}
+
+.col-1 {
+	width: 45%;
+	float: left;
+	margin: 10px;
+}
+
+.err {
+	color: red;
+	font-style: italic;
+}
+
+@media only screen and (max-width: 800px) {
 	html {
-		width: 90%;
-		margin: 0 auto;
-		font-family: 'Open Sans','Helvetica Neue',Helvetica,Arial,sans-serif;
+		width: 95%;
 	}
-
-	img {
-		width: 100%;
-	}
-	
-	a {
-		text-decoration: none;
-	}
-	.panel {
-		float: right;
-		border: none;
-	}
-
-	.form {
-        width: 315px;
-		background: white;
-		border: 1px solid grey;
-		padding: 15px;
-		margin: 5px auto;
-		font-size: 15px;
-	}
-	div.box {
-		margin: 50px auto;
-	    width: 350px;
-	}
-
-	input.btn {
-		font-size: 15px;
-		border-radius:5px;
-		border: none;
-		padding: 15px;
-		background-color: #4d4dff;
-		color: white;
-	}
-
-	button{
-		font-size: 15px;
-		border-radius:5px;
-	}
-
-	button.btn{
-		border: none;
-		padding: 10px;
-		background-color: #4d4dff;
-		color: white;
-	}
-
-	button.btnReg{
-		border: 1;
-		padding: 8px;
-		color: #4d4dff;
-		font-weight: bold;
-		border-color: #4d4dff;
-		background-color: white;
-		border-style: solid;
-	}
-
-	.submitbox {
-		margin: 10px 0;
-	}
-
 	.col-1 {
-		width: 45%;
-		float: left;
-		margin: 10px;
+		width: 100%;
+		display: block;
+		float: none;
+		margin: 0;
 	}
-	
-	.err {
-		color: red;
-		font-style: italic;
-	}
-
-	@media only screen and (max-width: 800px) {
-		html {
-			width: 95%;
-		}
-		.col-1 {
-			width: 100%;
-			display: block;
-			float: none;
-			margin: 0;
-		}
-		
-	}
+	#map-canvas {
+	    max-height: 250px;
+	  }
+}

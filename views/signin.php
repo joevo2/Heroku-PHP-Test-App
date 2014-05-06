@@ -24,14 +24,6 @@
 				<a href="passreset.php">Forget your password?</a>
 				</div>
 			</form>
-
-			<?php
-				include "../modal/function.php";
-
-				$table = "carpooler";
-				
-				  
-			?>
 		</div>
 	</body>
 </html>
