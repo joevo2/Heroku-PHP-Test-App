@@ -2,6 +2,7 @@
 <html>
 	<head>
 		<title>CarPool</title>
+		<meta name="viewport" content="width=device-width, user-scalable=no">
 		<link rel="stylesheet" type="text/css" href="style.css">
 		<?php include "views/map.php" ?>
 	</head>
