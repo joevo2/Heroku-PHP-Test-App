@@ -6,7 +6,7 @@
 		<meta name="viewport" content="width=device-width, user-scalable=no">
 		<style type="text/css">
 			.btn {
-				width: 335px;
+				width: 340px;
 				margin: 10px 0px;
 			}
 			
@@ -20,6 +20,8 @@
 				<input class="form" type="text" name="name" placeholder="Name">
 				<input class="form" type="text" name="email" placeholder="Email">
 				<input class="form" type="password" name="password" placeholder="Password">
+                
+                
 				<input type="radio" name="gender" value="Male">Male
 				<input type="radio" name="gender" value="Female">Female
 				<br><br>
