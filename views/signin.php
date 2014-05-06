@@ -2,7 +2,7 @@
 <html>
 	<head>
 		<link rel="stylesheet" type="text/css" href="../style.css">
-		<meta name="viewport" content="width=device-width, user-scalable=no">
+		<meta name="viewport" content="initial-scale=1">
 		<style type="text/css">
 			.btn {
 				width: 335px;
