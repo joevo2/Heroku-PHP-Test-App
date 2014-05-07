@@ -1,3 +1,6 @@
+<?php
+session_start();
+?>
 <!DOCTYPE html>
 <html>
 	<head>
@@ -7,18 +10,17 @@
 		</style>
 	</head>
 	<body>
-		<a href="../index.php"><h1>Carpool for HELP CAT</h1></a>
+		<a href="../index.php"><h1>CarPool</h1></a>
 		<div class="box">
 			<?php
-				require '../controller/signup_con.php';
-				echo $response;
+				echo $_SESSION['response'];
 			?>
 		</div>
-		<!--script type="text/javascript">
+		<script type="text/javascript">
 			setTimeout(function () {
 			   window.location.href= '../index.php'; // the redirect goes here
 
 			},5000);
-		</script-->
+		</script>
 	</body>
 </html>

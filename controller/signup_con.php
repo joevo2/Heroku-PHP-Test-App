@@ -1,6 +1,6 @@
 <?php
 	require "../modal/function.php";
-
+session_start();
 	function newUser() {
 		$table = "users";
 		$name = $_POST['name'];
@@ -30,9 +30,10 @@
 	}
 
 	if (isset($_POST['signUp'])) {
-		$response = signUp();
-		echo $response;
-		//header("Location: ../views/thanks.php");
+		$_SESSION['response'] = signUp();
+		//echo $response;
+		header("Location: ../views/thanks.php");
+		exit;
 	}
 
 ?>

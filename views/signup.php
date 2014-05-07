@@ -13,7 +13,7 @@
 		</style>
 	</head>
 	<body>
-		<a href="../index.php"><h1>Carpool</h1></a>
+		<a href="../index.php"><h1>CarPool</h1></a>
 		<div class="box">
 			<h2>Sign Up</h2>
 			<form action="../controller/signup_con.php" method="post">

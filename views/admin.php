@@ -6,14 +6,14 @@
 		<meta name="viewport" content="width=device-width, user-scalable=no">
 	</head>
 	<body>
-		<a href="../index.php"><h1>Carpool for HELP CAT</h1></a>
+		<a href="../index.php"><h1>CarPool</h1></a>
 		<h2>Admin Panel</h2>
 		<h3>Feedback</h3>
 		<form action="" method="post">
-			<input type="number" name="numRow">
+			<input type="number" name="numRow" value="5">
 			<input type="submit" value="Submit">
 		</form>
-		<?php 
+		<?php
 			require '../modal/function.php';
 			$table = "feedback";
 			if (isset($_POST['numRow'])) {
