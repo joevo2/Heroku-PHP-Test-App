@@ -14,7 +14,7 @@
 		<a href="../index.php"><h1>CarPool</h1></a>
 		<div class="box">
 			<h2>Sign In</h2>
-			<form method="post" action="">
+			<form method="post" action="../controller/signin_con.php">
 				<input class="form" type="text" name="email"  placeholder="Email"><br>
 				<input class="form" type="password" name="password" placeholder="Password"><br>
 				<br>

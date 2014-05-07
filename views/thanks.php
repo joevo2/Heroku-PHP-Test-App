@@ -10,7 +10,7 @@
 		<a href="../index.php"><h1>Carpool for HELP CAT</h1></a>
 		<div class="box">
 			<?php
-				include '../controller/signup_con.php';
+				require '../controller/signup_con.php';
 				echo $response;
 			?>
 		</div>
