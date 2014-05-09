@@ -6,7 +6,7 @@
 		<meta name="viewport" content="initial-scale=1">
 		<style type="text/css">
 			.btn {
-				width: 340px;
+				width: 350px;
 				margin: 10px 0px;
 			}
 

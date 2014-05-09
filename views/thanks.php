@@ -1,6 +1,3 @@
-<?php
-session_start();
-?>
 <!DOCTYPE html>
 <html>
 	<head>
@@ -13,7 +10,9 @@ session_start();
 		<a href="../index.php"><h1>CarPool</h1></a>
 		<div class="box">
 			<?php
+				session_start();
 				echo $_SESSION['response'];
+				session_destroy();
 			?>
 		</div>
 		<script type="text/javascript">

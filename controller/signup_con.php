@@ -1,12 +1,19 @@
 <?php
 	require "../modal/function.php";
-session_start();
+
+	session_start();
+
 	function newUser() {
 		$table = "users";
 		$name = $_POST['name'];
 		$email = $_POST['email'];
 		$password = $_POST['password'];
 		$gender = $_POST['gender'];
+
+		//Form validation
+		
+
+
 		$result = queryInsert($table,
 			array('name','email','password','gender'),
 			array($name, $email, $password, $gender));
