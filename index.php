@@ -29,13 +29,24 @@
 		</div>
 		<div class="col-1">
 			<div class="display">
-				<p>All destination are only to and from College/University</p>
 				<?php
 					//if($_SESSION) {
 						echo "<form>"
-						. "<input class='form'type='text'>"
-						. "<input class='form'type='date'>"
-						. "<input class='form'type='time'>"
+						. "To and from "
+						. "<select>"
+						. "<option value='HELP CAT'>HELP CAT</option>"
+						. "<option value='HELP U'>HELP U</option>"
+						. "<option value='UM'>UM</option>"
+						. "</select><br>"
+						. "Availability:"
+						. "<input type='checkbox'>Mon"
+						. "<input type='checkbox'>Tue"
+						. "<input type='checkbox'>Wed"
+						. "<input type='checkbox'>Thu"
+						. "<input type='checkbox'>Fri"
+						. "<input type='checkbox'>Sat<br>"
+						. "Time: "
+						. "<input class='form' type='time'>"
 						. "<input class='btn' type='submit' value='OFFER RIDE'>"
 						. "</form>";
 					//}
