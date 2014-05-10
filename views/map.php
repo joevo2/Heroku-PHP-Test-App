@@ -1,11 +1,3 @@
-<style>
-  #map-canvas {
-    height: 500px;
-    max-width: 800px;
-    margin: 0px;
-    padding: 0px
-  }
-</style>
 <script src="https://maps.googleapis.com/maps/api/js?v=3.exp&sensor=false"></script>
 <script>
       function initialize() {

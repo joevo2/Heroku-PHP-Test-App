@@ -17,7 +17,7 @@
 			<form method="post" action="../controller/signin_con.php">
 				<input class="form" type="text" name="email"  placeholder="Email"><br>
 				<input class="form" type="password" name="password" placeholder="Password"><br>
-				<br>
+				<input type="checkbox" name="rmbrpass">Remember password
 				<div class="submitbox">
 				<input class="btn" type="submit" value="Sign In">
 				&nbsp or <a href="signup.php">Sign Up</a><br>
