@@ -10,6 +10,11 @@
 				max-width: 200px;
 				margin: 10px;
 			}
+			label {
+        width: 50px;
+        float:left;
+				margin: 25px 10px;
+      }
 		</style>
 	</head>
 	<body>
@@ -45,8 +50,9 @@
 						. "<input type='checkbox'>Thu"
 						. "<input type='checkbox'>Fri"
 						. "<input type='checkbox'>Sat<br>"
-						. "Time: "
-						. "<input class='form' type='time'>"
+						. "Time<br> "
+						. "<label>To: </label><input class='form' type='time'><br>"
+						. "<label>From: </label><input class='form' type='time'><br>"
 						. "<input class='btn' type='submit' value='OFFER RIDE'>"
 						. "</form>";
 					//}
