@@ -9,5 +9,5 @@
 	$con = pg_connect("dbname=postgres host=localhost
 		port=5432 user=Joel password=jj021192
 		") or die('Could not connect: ' . pg_last_error());
-	
+
 ?>
