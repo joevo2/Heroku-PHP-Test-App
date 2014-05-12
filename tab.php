@@ -2,6 +2,7 @@
 <html>
 <head>
 	<title></title>
+    
 	<style type="text/css">
 		//CSS Tab
 		.tabs {
@@ -42,6 +43,16 @@
 		[type=radio]:checked ~ label ~ .content {
 		  z-index: 1;
 		}
+        
+        .form {
+            max-width: 200px;
+            margin: 10px;
+        }
+        .labelx {
+            width: 50px;
+            float:left;
+            margin: 25px 10px;
+        }
 	</style>
 </head>
 <body>
@@ -52,7 +63,29 @@
 		   <label for="tab-1">HELP CAT</label>
 		   
 		   <div class="content">
-		       Driver Available 1
+		       <?php
+					//if($_SESSION) {
+						echo "<form>"
+						. "To and from "
+						. "<select>"
+						. "<option value='HELP CAT'>HELP CAT</option>"
+						. "<option value='HELP U'>HELP U</option>"
+						. "<option value='UM'>UM</option>"
+						. "</select><br>"
+						. "Availability:"
+						. "<input type='checkbox'>Mon"
+						. "<input type='checkbox'>Tue"
+						. "<input type='checkbox'>Wed"
+						. "<input type='checkbox'>Thu"
+						. "<input type='checkbox'>Fri"
+						. "<input type='checkbox'>Sat<br>"
+						. "Time<br> "
+						. "<label class='labelx'>To: </label><input class='form' type='time'><br>"
+						. "<label class='labelx'>From: </label><input class='form' type='time'><br>"
+						. "<input class='btn' type='submit' value='OFFER RIDE'>"
+						. "</form>";
+					//}
+				?>
 		   </div> 
 		</div>
 

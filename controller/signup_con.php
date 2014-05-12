@@ -2,23 +2,29 @@
 	require "../modal/function.php";
 
 	session_start();
+	$_SESSION['err']  = "";
 
 	function newUser() {
-		$table = "users";
-		$name = $_POST['name'];
-		$email = $_POST['email'];
-		$password = $_POST['password'];
-		$gender = $_POST['gender'];
-
 		//Form validation
-		
+		if(empty($_POST['name']) || empty($_POST['email'])
+		|| empty($_POST['password']) || empty($_POST['gender'])
+		|| empty($_POST['agree'])) {
+				$_SESSION['err'] = "Form Incomplete";
 
+				return "Form incomplete";
+		} else {
+			$table = "users";
+			$name = $_POST['name'];
+			$email = $_POST['email'];
+			$password = $_POST['password'];
+			$gender = $_POST['gender'];
 
-		$result = queryInsert($table,
-			array('name','email','password','gender'),
-			array($name, $email, $password, $gender));
-		if ($result) {
-			return "<h3>Thank You! For Signing Up</h3>";
+			$result = queryInsert($table,
+				array('name','email','password','gender'),
+				array($name, $email, $password, $gender));
+			if ($result) {
+				return "<h3>Thank You! For Signing Up</h3>";
+			}
 		}
 	}
 
@@ -38,9 +44,7 @@
 
 	if (isset($_POST['signUp'])) {
 		$_SESSION['response'] = signUp();
-		//echo $response;
 		header("Location: ../views/thanks.php");
 		exit;
 	}
-
 ?>
