@@ -2,12 +2,13 @@
 	#Connection
 	require "con.php";
 
-	#Commonly used SQL function	
+	#Commonly used SQL function
+	#Use default value to create function with optional parameter
 	function queryDisplay($result,$rowCount = -1) {
 		if ($rowCount == -1) {
 			$rowCount = pg_num_rows($result);
 		}
-		for ($x=0; $x < $rowCount; $x++) { 
+		for ($x=0; $x < $rowCount; $x++) {
 			$row = pg_fetch_row($result);
 			for ($i=0; $i < count($row); $i++) {
 					echo $row[$i] . " ";
@@ -23,13 +24,13 @@
 		else {
 			$query = "INSERT INTO $table ($col) VALUES ('$item')";
 		}
-		return $result = pg_query($query) or die(pg_last_error());	
+		return $result = pg_query($query) or die(pg_last_error());
 	}
-	
+
 	function queryAll($table) {
 		$query = "SELECT * FROM $table";
 		$result = pg_query($query) or die(pg_last_error());
-		
+
 		return $result;
 	}
 
@@ -58,6 +59,6 @@
 		email VARCHAR(60),
 		password VARCHAR(12),
 		gender VARCHAR(6))";
-	pg_query($sql) or die(pg_last_error());	
+	pg_query($sql) or die(pg_last_error());
 	*/
 ?>

@@ -17,3 +17,7 @@ Security Feature
 - Student/Lecturer ID Email verification
 - Phone number verificaton via Twillo (Planned)
 - Facebook profile and bio link
+
+Feature to be implement
+-----------------------
+- [Noty Notification](http://ned.im/noty/)
